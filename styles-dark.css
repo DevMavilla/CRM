@@ -1,0 +1,181 @@
+:root {
+  --verde-escuro: #187a41;
+  --areia: #e4e3d4;
+  --dourado: #b28f40;
+  --verde-claro: #7cb394;
+  --verde-musgo: #989c78;
+
+  /* Variáveis exclusivas para o tema dark */
+  --background-dark: #121212;
+  --text-dark: #e4e3d4;
+  --sidebar-bg-dark: rgba(24, 122, 65, 0.8);
+  --box-bg-dark: rgba(34, 34, 34, 0.85);
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --shadow-dark: rgba(0, 0, 0, 0.8);
+}
+
+body.dark-theme {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  
+}
+
+body.dark-theme .login-box {
+  background: var(--box-bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-dark);
+  box-shadow: 0 8px 32px var(--shadow-dark);
+}
+
+body.dark-theme .login-box input {
+  background: #222;
+  color: var(--text-dark);
+  border: 1px solid var(--border-dark);
+}
+
+body.dark-theme .login-box button {
+  background-color: var(--verde-musgo);
+  color: var(--text-dark);
+}
+
+body.dark-theme .login-box button:hover {
+  background-color: var(--verde-escuro);
+}
+
+body.dark-theme .sidebar {
+  background: var(--sidebar-bg-dark);
+  border-right: 1px solid var(--border-dark);
+  color: var(--text-dark);
+}
+
+body.dark-theme .sidebar h2 {
+  color: var(--areia);
+}
+
+body.dark-theme .sidebar nav a {
+  color: var(--areia);
+  transition: transform 0.2s, color 0.2s;
+}
+
+body.dark-theme .sidebar nav a:hover {
+  color: var(--dourado);
+  transform: translateX(5px);
+}
+
+body.dark-theme .xp-display {
+  background-color: var(--dourado);
+  color: var(--background-dark);
+}
+
+body.dark-theme .content {
+  background-color: transparent;
+  color: var(--text-dark);
+}
+
+body.dark-theme section {
+  background-color: var(--box-bg-dark);
+  color: var(--text-dark);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-theme section h1 {
+  color: var(--areia);
+}
+
+body.dark-theme form input,
+body.dark-theme form select {
+  background-color: #222;
+  color: var(--text-dark);
+  border: 1px solid var(--border-dark);
+}
+
+body.dark-theme form button {
+  background-color: var(--verde-musgo);
+  color: var(--text-dark);
+}
+
+body.dark-theme form button:hover {
+  background-color: var(--verde-escuro);
+}
+
+body.dark-theme .lead-card {
+  background-color: #1e1e1e;
+  color: var(--areia);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-theme .lead-card.quente { border-color: #e63946; }
+body.dark-theme .lead-card.morno { border-color: #f4a261; }
+body.dark-theme .lead-card.frio { border-color: #457b9d; }
+
+body.dark-theme .lead-card.matriculado {
+  border-color: var(--dourado) !important;
+  background-color: #3a2d00;
+  box-shadow: 0 0 12px rgba(178, 143, 64, 0.9);
+  color: var(--areia);
+}
+
+body.dark-theme .actions button {
+  background-color: var(--verde-claro);
+  color: var(--text-dark);
+}
+
+body.dark-theme .actions button:hover {
+  background-color: var(--verde-escuro);
+}
+
+body.dark-theme .progress-container {
+  background-color: #222;
+}
+
+body.dark-theme .progress-bar {
+  background-color: var(--verde-musgo);
+  color: var(--background-dark);
+}
+
+body.dark-theme #conversionRate {
+  color: var(--areia);
+}
+
+body.dark-theme .content::-webkit-scrollbar-thumb {
+  background-color: var(--verde-claro);
+}
+
+body.dark-theme .matricula-controls button {
+  background-color: var(--verde-musgo);
+  color: var(--text-dark);
+}
+
+body.dark-theme .matricula-controls button:hover {
+  background-color: var(--verde-escuro);
+}
+
+/* Reset básico e dimensões */
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+/* Container da barra */
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 0.75rem;
+}
+
+/* A parte que preenche */
+progress[value]::-webkit-progress-value {
+  background-color: #4caf50;
+  border-radius: 0.75rem;
+}
+
+/* Browsers Firefox */
+progress[value]::-moz-progress-bar {
+  background-color: #4caf50;
+  border-radius: 0.75rem;
+}
